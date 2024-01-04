@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+}
+
+
+
+.main_body {
+    background-image: url(images/BG_FIRST.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 756px;
+    margin: 2% auto;
+    margin-left: 40%;
+    display: grid;
+    position: absolute;
+}
+.modal_box {
+    background-color: rgba(0,0,0,0.8);
+    width: 375px;
+    height: 756px;
+    margin: 2% auto;
+    margin-left: 40%;
+   display: grid;
+   position: absolute;
+   transition: all 5s ease-out;
+ }
+
+.coinbox {
+    background-color: rgba(135, 206, 235,.4);
+    padding: 1%;
+    border-radius: 20px;
+    display: flex;
+}
+
+#house {
+    position: absolute;
+}
+
+#score {
+    color: white;
+    font-size: 2rem;
+    font-family: arial;
+    margin-top: 5%;
+}
+
+#coinbox {
+    opacity: 5;
+}
+#text {
+    margin: auto;
+}
+
+#reboxText {
+    margin: auto;
+}
+#avatar {
+    margin-left: 50px;
+    margin-top: 20%;
+}
+
+#avatarUp {
+    margin-left: 55px;
+    margin-top: 30%;
+    z-index: 10;
+}
+.ellipseMain {
+    margin-top: -90%;
+    margin-left: 20%;
+    z-index: 10;
+}
+
+#bobux {
+    margin-top: -80%;
+    margin-left: 35%;
+    cursor: pointer;
+    z-index: 25;
+}
+
+#hands {
+    margin-top: -55%;
+    margin-left: 50%;
+    z-index: 30;
+}
+#yellowcoin {
+    margin-top: -76%;
+    margin-left: 40%;
+    position: relative;
+    display: none;
+}
+
+.move_it {
+    display: block;
+    opacity:0;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    
+}
+
+@keyframes myanimation {
+    0%{
+        opacity: 5;
+        left: 0px;
+        top: 0px;
+        border-radius: 0 0 0 0;
+    }
+   
+    50%{
+        opacity: 5;
+        left: -150px;
+        top: -310px;
+        border-radius: 50% 50% 0 0;
+    }
+   
+    100%{
+        opacity: 5;
+        left: -150px;
+        top: -310px;
+        border-radius: 50%;
+    }
+}
+
+.upgrade_box {
+    background-image: url(images/Frame\ 5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 375px;
+}
+
+.upgrade_section {
+    background-color: rgba(0,0,0,0.7);
+    width: 375px;
+    height: 756px;
+    margin: 2% auto;
+    margin-left: 40%;
+    position: absolute;
+    text-align: center;
+    display: none;
+    transition: all 5s ease-in;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  
+  @keyframes fade {
+    from {opacity: 1}
+    to {opacity: 1}
+  }
+
+.avatar_upgrade_section {
+    background-color: rgba(0,0,0,0.7);
+    width: 375px;
+    height: 756px;
+    margin: 2% auto;
+    margin-left: 40%;
+    position: absolute;
+    text-align: center;
+    display: none;
+    z-index: 100;
+}
+.car_upgrade_section {
+    background-color: rgba(0,0,0,0.7);
+    width: 375px;
+    height: 756px;
+    margin: 2% auto;
+    margin-left: 40%;
+    position: absolute;
+    text-align: center;
+    display: none;
+    z-index: 100;
+}
+.house_upgrade_section {
+    background-color: rgba(0,0,0,0.7);
+    width: 375px;
+    height: 756px;
+    margin: 2% auto;
+    margin-left: 40%;
+    position: absolute;
+    text-align: center;
+    display: none;
+    z-index: 100;
+}
+.play_upgrade_section {
+    background-color: rgba(0,0,0,0.7);
+    width: 375px;
+    height: 756px;
+    margin: 2% auto;
+    margin-left: 40%;
+    position: absolute;
+    text-align: center;
+    display: none;
+    z-index: 100;
+}
+.upgrade_box1 {
+    background-image: url(images/Frame\ 5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 128%;
+    width: 374px;
+    cursor: pointer;
+}
+
+#carPic {
+    position: absolute;
+    margin-top: 80%;
+    margin-left: 52%;
+    z-index: 1;
+}
+
+.upgrade_box2 {
+    background-image: url(images/Frame\ 5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 168%;
+    width: 374px;
+    cursor: pointer;
+}
+
+.upgrade_box3 {
+    background-image: url(images/Frame\ 5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 168%;
+    width: 374px;
+    cursor: pointer;
+}
+
+.upgrade_box4 {
+    background-image: url(images/Frame\ 5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 168%;
+    width: 374px;
+    cursor: pointer;
+}
+.upgrade_box5 {
+    background-image: url(images/Frame\ 5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 168%;
+    width: 374px;
+    cursor: pointer;
+}
+
+#coinspot {
+    margin-top: -75%;
+    margin-left: 38%;
+    cursor: pointer;
+    z-index: 60;
+}
+
+#secondcoinspot {
+    margin-top: -75%;
+    margin-left: 38%;
+    cursor: pointer;
+    z-index: 70;
+}
+#thirdcoinspot {
+    margin-top: -75%;
+    margin-left: 38%;
+    cursor: pointer;
+    z-index: 70;
+}
+
+#fourthcoinspot {
+    margin-top: -70%;
+    margin-left: 38%;
+    cursor: pointer;
+    z-index: 70;
+}
+
+@media screen and (max-width:320px) {
+    body {
+        background-color: red;
+    }
+   .main_body {
+    width: 320px;
+    height: 480px;
+    margin: 0% auto;
+    margin-left: 0%;
+    display: grid;
+    position: absolute;
+    overflow: hidden;
+   }
+   .coinbox {
+    width: 320px;
+   }
+   #score {
+    font-size: 1.5rem;
+   }
+   #text {
+    width: 200px;
+    height: 30px;
+    margin-top: 1%;
+   }
+   #avatar {
+    width: 180px;
+    height: 250px;
+    margin-left: 21%;
+    margin-top: 15%;
+   }
+   #avatarUp {
+    width: 180px;
+    height: 250px;
+    margin-left: 21%;
+    margin-top: 29%;
+   }
+   #changeToCar {
+    width: 320px;
+    height: 110px;
+    margin-top: -4%;
+   }
+   #secondcoinspot {
+    margin-top: -58%;
+    margin-left: 34%;
+    cursor: pointer;
+    z-index: 70;
+}
+#thirdcoinspot {
+    margin-top: -58%;
+    margin-left: 34%;
+    cursor: pointer;
+    z-index: 70;
+}
+   .upgrade_box {
+    background-image: url(images/Frame\ 5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 315px;
+}
+.modal_box {
+    background-color: rgba(0,0,0,0.8);
+    width: 320px;
+    height: 480px;
+    margin: 0% auto;
+   display: grid;
+   position: absolute;
+ }
+ .upgrade_section {
+   background-color: rgba(0,0,0,0.8);
+   width: 320px;
+   height: 480px;
+   margin: 0% auto;
+   display: none;
+   position: absolute;
+   z-index: 50;
+   overflow: hidden;
+ }
+ #firstText {
+    width: 200px;
+ }
+ #secondText {
+    width: 150px;
+ }
+ #ellipse {
+    position: relative;
+    width: 180px;
+    height: 150px;    
+    z-index: 10;
+    margin-top: -65%;
+}
+
+#bobux {
+    width: 90px;
+    height: 120px;
+    cursor: pointer;
+    z-index: 25;
+    margin-top: -60%;
+}
+.bobuxCoins {
+    width: 100px;
+    height: 110px;
+}
+
+#reboxText {
+    width: 130px;
+    height: 50px;
+    margin-top: 1%;
+}
+#coinspot {
+    margin-top: -65%;
+    margin-left: 35%;
+    cursor: pointer;
+    z-index: 60;
+}
+
+#hands {
+    width: 50px;
+    height: 70px;
+    z-index: 30;
+    margin-top: -350%;
+    margin-bottom: 8%;
+    margin-left: 5%;
+}
+
+.upgrade_box {
+    width: 320px;
+    height: 85px;
+    margin-top: -3%;
+    overflow: hidden;
+}
+
+.upgrade_box #upgrade {
+    width: 320px;
+    height: 80px;
+}
+
+#avatarBox {
+    width: 320px;
+    height: 110px;
+    margin-top: -4%;
+}
+
+.upgrade_box1 {
+    width: 320px;
+    height: 80px;
+    margin-top: 83%;
+}
+#carPic {
+    width: 135px;
+    position: absolute;
+    margin-top: 75%;
+    margin-left: 58%;
+    z-index: 1;
+}
+
+#houseBox {
+    width: 320px;
+    height: 120px;
+    margin-top: -6%;
+}
+
+#housePic {
+    width: 320px;
+    height: 110px;
+    margin-top: -5%;
+}
+
+#house {
+    margin-top: -12%;
+    width: 320px;
+    height: 570px; 
+}
+#fourthcoinspot {
+    margin-top: -55%;
+    margin-left: 35%;
+    cursor: pointer;
+    z-index: 70;
+}
+
+.upgrade_box1 #upgrade {
+    width: 320px;
+    height: 80px;
+}
+.avatar_upgrade_section {
+    background-color: rgba(0,0,0,0.8);
+   width: 320px;
+   height: 480px;
+   margin: 0% auto;
+   display: none;
+   position: absolute;
+   z-index: 100;
+   overflow: hidden;
+} 
+
+#playButton {
+    width: 320px;
+    height: 110px;
+    margin-top: -5%;
+}
+
+.house_upgrade_section {
+    background-color: rgba(0,0,0,0.8);
+   width: 320px;
+   height: 480px;
+   margin: 0% auto;
+   display: none;
+   position: absolute;
+   z-index: 100;
+    overflow: hidden;
+}
+.car_upgrade_section {
+    background-color: rgba(0,0,0,0.8);
+   width: 320px;
+   height: 480px;
+   margin: 0% auto;
+   display: none;
+   position: absolute;
+   z-index: 100;
+   overflow: hidden;
+} 
+.play_upgrade_section {
+    background-color: rgba(0,0,0,0.8);
+   width: 320px;
+   height: 480px;
+   margin: 0% auto;
+   display: none;
+   position: absolute;
+   z-index: 100;
+    overflow: hidden; 
+}
+.upgrade_box2 {
+    width: 320px;
+    height: 80px;
+    margin-top: 125%;
+}
+.upgrade_box3 {
+    width: 320px;
+    height: 80px;
+    margin-top: 125%;
+}
+.upgrade_box4 {
+    width: 320px;
+    height: 80px;
+    margin-top: 125%;
+}
+.upgrade_box5 {
+    width: 320px;
+    height: 80px;
+    margin-top: 125%;
+}
+    
+}
